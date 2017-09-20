@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body {
+  box-sizing: border;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /*background-image: url('https://cdn.spacetelescope.org/archives/images/large/heic1501a.jpg');*/
+  background-size: 100%;
+}
+
+h1 {
+  position: fixed;
+  left: 10px;
+  font-size: 60px;
+  font-family: Orbitron;
+  margin-top: -25px;
+  color: black;
+  -webkit-text-fill-color: black;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.display {
+  height: 50px;
+  color: #000000;
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.display_text {
+  margin: 0;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.number_pad {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid black;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid black;
+  margin: auto;
+}
+
+.tile:hover {
+  cursor: pointer;
+}
+
+.tile:active {
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+h5 {
+  font-size: 39px;
+  font-family: Roboto;
+  color: black;
+  margin: 30px auto;
+}
